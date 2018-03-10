@@ -1,0 +1,19 @@
+var Lotto = new Set();
+var mini = new Set();
+var Extra = new Set();
+
+while(Lotto.size != 6){
+Lotto.add(Math.floor(Math.random()*49)+1);
+}
+
+while(mini.size != 5){
+mini.add(Math.floor(Math.random()*42)+1);
+}
+
+while(Extra.size != 5){
+Extra.add(Math.floor(Math.random()*35)+1);
+}
+
+console.log('Lotto ' + [...Lotto]);
+console.log('mini ' + [...mini]);
+console.log('Extra ' + ([...Extra]));
